@@ -33,6 +33,7 @@ def validate_data(values):
     Raise ValueError if strings cannot be converted into intr,
     or if there arent't exaclty 6 values
     """
+    [int(value) for value in values]
     try: 
         if len(values) !=6:
             raise ValueError(
